@@ -1,0 +1,144 @@
+.mg-right{
+	margin-right:100px;
+}
+
+.navbar-brand{
+	 
+		img{
+      margin-top: 8px;
+      width: 100%;
+      min-width: 125px;        
+		}
+	
+}
+
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.ml-auto{
+	left:auto !important;
+	right:0px;
+}
+
+.navbar-nav{
+	grid-direction:row;
+
+
+	
+	.nav-item{
+		margin-right:5px;
+		
+		.nav-link{
+      
+      max-width:1100px;
+			text-transform:none;
+			font-weight:500;
+			color: $color-light-black !important;
+		}
+
+		
+		
+	}
+
+}
+
+
+.search{
+position: relative; 
+		input[type=text]{
+			visibility:hidden;
+			width: 0px;
+		    box-sizing: border-box;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    font-size: 16px;
+		    background-color: white;
+		    background-position: 10px 10px; 
+		    background-repeat: no-repeat;
+		    padding: 12px 33px 12px 20px;
+		  	-webkit-transition: all .5s ease;
+   			-moz-transition: all .5s ease;
+  		 	transition: all .5s ease;
+		}
+
+
+		input[type=text]:hover{
+			width:250px;
+		}
+		input[type=text]:focus {
+  		  width: 250px;
+		}
+	}
+
+.search .fa-search {
+ 
+  position: absolute;
+    right: 7px;
+    top: 6px;
+    font-size: 26px;
+}
+
+.active{
+	border-bottom: 1px solid $color-black;
+}
+
+
+.dropdown-menu a:after{
+position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+
+}
+
+.drop-menu a{
+  width:auto;
+}
+
+
+
+.dropdown-menu:before {
+    content:"";
+    position: absolute;
+    left: 31px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent $color-gray transparent;
+    z-index:9999;
+}
+
+.dropdown-menu {
+
+	opacity:0.9;
+    background: #fff;
+ 
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    margin: 0;
+    top: 3.1em;
+    right:1px;
+    width: 200px;
+    z-index: 99999;
+}
+
+
+
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px) { .nav-link  { font-size:14px;}} }
+@media (max-width:768px) { .nav-link  { font-size:14px; .dropdown-menu{margin:0 auto; dropdown-menu:before{left:255px; top:28px;}}}
+@media (min-width:801px) { .nav-link  { font-size:14px;}}
+@media (min-width:1025px) { .nav-link { font-size:12px; }}
+@media (min-width:1281px) { .nav-link { font-size:14px; } }
+
